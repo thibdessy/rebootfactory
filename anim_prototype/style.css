@@ -1,0 +1,62 @@
+body{
+	position: relative;
+	font-family: "museo-sans-rounded";
+}
+h1{text-align: center;}
+h2{
+	color:#F4F4F4;
+	text-align: center;
+}
+.icon{
+	display: block;
+	position: absolute;
+	width: 40px;
+	padding: 10px;
+	cursor: pointer;
+}
+.set-icon{
+	display: block;
+	width: 30px;
+	cursor: pointer;
+	margin: 10px auto;
+}
+.screen{
+	position: relative;
+	background: #191919;
+	width:320px;
+	height:480px;
+	overflow: hidden;
+}
+.recipe{
+	position: relative;
+	background: green;
+	width: 220px;
+	height:300px;
+	margin: 25px auto;
+	-webkit-transition: all .4s ease-out;
+	-webkit-transition-delay: .3s;
+}
+.settings{
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background: red;
+	width:320px;
+	height:480px;
+	z-index: 99;
+	-webkit-transform: translateY(430px);
+	-webkit-transition: all .4s ease-out;
+	-webkit-transition-delay: .3s;
+}
+.open{
+	-webkit-transform: translateY(60px);
+}
+.add-to-list{
+	-webkit-transform: translateY(400px);
+}
+
+.left{left:0;}
+.right{right:0;}
+.top{top:0;}
+.bottom{bottom:0;}
