@@ -1,0 +1,82 @@
+*{
+	box-sizing: border-box;
+}
+
+@import url(normalize.css);	/* v3.0.2 */
+@import url(cf.css);
+/*
+@import url(fonts.css);
+*/
+
+nav ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+/* The following CSS prevents Safari from changing the font size when the device is rotated - you may or may not need this */
+body, html {
+	-webkit-text-size-adjust: 100%; /* prevents text size from changing on orientation change */
+}
+
+/* Your Style */
+
+header{
+	position: absolute;
+	height: 15vh;
+	width: 100%;
+	background-color: #ccc;
+	/*box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);*/
+	z-index: 10;
+}
+.recette{
+	position: absolute;
+	width: 80%;
+	height: 65vh;
+	background-color: #ddd;
+	left: 10%;
+	top: 20%;
+	/*box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);*/
+	z-index: 50;
+
+}
+footer{
+	position: absolute;
+	height: 10vh;
+	width: 100%;
+	background-color: #ccc;
+	z-index: 100;
+	top: 90vh;
+}
+nav{
+	display: flex;
+	height: 100%;
+	width: 100%;
+}
+.icone{
+	width: 25%;
+	height: 100%;
+}
+.like{
+	display: block;
+	margin: 10px auto 0 auto;
+	height: 40px;
+	width: 40px;
+}
+.addtolist{
+	display: block;
+	margin: 10px auto 0 auto;
+	height: 40px;
+	width: 40px;
+}
+.search{
+	display: block;
+	margin: 10px auto 0 auto;
+	height: 40px;
+	width: 40px;
+}
+.setting{
+	display: block;
+	margin: 10px auto 0 auto;
+	height: 40px;
+	width: 40px;
+}
