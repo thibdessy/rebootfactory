@@ -1,0 +1,110 @@
+*{
+	box-sizing: border-box;
+}
+body{
+	font-family: roboto;
+}
+
+#mobile{
+	width: 340px;
+	height: 548px;
+	background-color: #ccc;
+	margin: 40px auto;
+	position: relative;
+	overflow: hidden;
+}
+#nav1{
+	display: flex;
+	width: 100%;
+	height: 10%;
+	background-color: #bbb;
+	position: relative;
+	top: 10%;
+}
+#nav2{
+	display: flex;
+	width: 100%;
+	height: 10%;	
+	background-color: #bbb;
+	position: relative;
+	top: 80%;
+	z-index: 1000;
+}
+.button{
+	display: inline-block;
+	width: 50%;
+	height: 100%;
+	cursor: pointer;
+	transition: .3s ease;
+}
+.button > p{
+	margin-top: 15px;
+	text-align: center;
+	font-weight: 500; 
+	font-size: 1.2em;
+}
+.button:nth-child(1){
+	border-right: solid 3px #ccc;
+}
+.icone{
+	display: inline-block;
+	width: 50%;
+	height: 100%;
+	cursor: pointer;
+}
+.icone:nth-child(1){
+	border-right: solid 3px #ccc;
+}
+.heart{
+	position: relative;
+	margin: 10px auto;
+	left: 40%;
+}
+.addlist{
+	position: relative;
+	margin: 10px auto;
+	left: 40%; 
+}
+.menurecette{
+	position: absolute;
+	top: 20%;
+	height: 80%;
+	width: 100%;
+	background-color: #aaa;
+	-webkit-transform: translatex(-100%);
+	transition: .3s ease;
+}
+.menuliste{
+	position: absolute;
+	top: 20%;
+	height: 80%;
+	width: 100%;
+	background-color: #aaa;
+	-webkit-transform: translatex(100%);
+	transition: .3s ease;
+}
+div.slided{
+	-webkit-transform: translatex(0);
+}
+.clicked{
+	background-color: #aaa;
+}
+.menuheart{
+	position: absolute;
+	height: 80%;
+	width: 100%;
+	background-color: #aaa;	
+	-webkit-transform: translatey(100%);
+	transition: .4s ease;
+}
+div.swiped{
+	-webkit-transform: translatey(0);
+}
+.menuaddlist{
+	position: absolute;
+	height: 80%;
+	width: 100%;
+	background-color: #aaa;	
+	-webkit-transform: translatey(200%);
+	transition: .5s ease;
+}
