@@ -1,0 +1,53 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+.menu{
+	position: fixed;
+	height: 50px;
+	bottom:0;
+	width: 100%;
+	background:#feb448;
+	z-index:999;
+}
+.menu ul li{
+	float:left;
+	list-style: none;
+	width: calc(100% / 4);
+	text-align: center;
+}
+.menu ul{
+	height: 50px;
+	margin:0;
+	padding: 0;
+}
+.icon{
+	width: 32px;
+	fill:#4c413f;
+}
+
+.screen{
+	background: #F9F9F9;
+	width: 100%;
+	height:100%;
+	overflow: hidden;
+}
+.overview{
+	background:#fff;
+	border: 2px solid #4c413f;
+	border-radius: 15px;
+	box-shadow: 1px 1px 4px #999;
+	float: left;
+	width: 250px;
+	height:350px;
+	margin: 15px;
+	overflow: hidden;
+}
+.overview h2{
+	text-align: center;
+}
+
+.recipe{
+	width: 90%;
+	margin: 0 auto;
+	border-radius: 15px;
+}
