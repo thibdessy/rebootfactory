@@ -21,7 +21,8 @@
 	padding: 0;
 }
 .icon{
-	width: 32px;
+	height:35px;
+	margin: 7px 0px;
 	fill:#4c413f;
 }
 
@@ -33,7 +34,6 @@
 }
 .overview{
 	background:#fff;
-	border: 2px solid #4c413f;
 	border-radius: 15px;
 	box-shadow: 1px 1px 4px #999;
 	float: left;
