@@ -51,3 +51,59 @@
 	margin: 0 auto;
 	border-radius: 15px;
 }
+/*********FAVORIS*********/
+/*********FAVORIS*********/
+/*********FAVORIS*********/
+.top-bar-favoris{
+	height: 50px;
+	background: #ace;
+}
+.icone-retour{
+	display: inline;
+}
+.top-bar-favoris h1{
+	float:left;
+	display: block;
+	font-size: 23px;
+	font-weight:300;
+	margin:11px 0 12px 0;
+}
+.top-bar-favoris a{
+	float:left;
+	display:block;
+	padding:10px 15px 10px 15px;
+	margin-right: 100px;
+}
+#favoris ul{
+	padding:0;
+	margin:0;
+}
+#favoris ul li{
+	float:left;
+	width:100%;
+	border-bottom: 1px solid #ace;
+	padding:12px 0 10px 5px ;
+	text-align: left;
+}
+#favoris ul li span{
+	text-align: left;
+	margin-left: 20px;
+}
+#favoris ul li div{
+	float:left;
+	display:none;
+	width:100%;
+}
+#favoris ul li div button{
+	float:left;
+	border:none;
+	width:33%;
+	height:;
+	background:none;
+}
+#favoris ul li div button{
+	border-right: 1px solid #ace;
+	padding:10px;
+}
+
+
