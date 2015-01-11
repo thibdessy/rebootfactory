@@ -1,0 +1,156 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+.menu{
+	position: fixed;
+	height: 50px;
+	bottom:0;
+	width: 100%;
+	background:#feb448;
+	z-index:999;
+}
+.menu ul li{
+	float:left;
+	list-style: none;
+	width: calc(100% / 4);
+	text-align: center;
+}
+.menu ul{
+	height: 50px;
+	margin:0;
+	padding: 0;
+}
+.icon{
+	height:35px;
+	margin: 7px 0px;
+	fill:#4c413f;
+}
+.screen{
+	background: #F9F9F9;
+	width: 100%;
+	height:100%;
+	overflow: hidden;
+}
+.liste, .favoris, .recherche, .filtres{
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+}
+.overview{
+	position: absolute;
+	background:#fff;
+	border-radius: 15px;
+	box-shadow: 1px 1px 4px #999;
+	float: left;
+	width: 250px;
+	height:350px;
+	margin: 15px;
+	overflow: hidden;
+	-webkit-transform:translateY(0);
+	-webkit-transition:all .3s ease-in;
+	-webkit-transition-delay: .3s;
+}
+.overview h2{
+	text-align: center;
+}
+.image--overview{
+	width: 250px;
+}
+.recipe{
+	width: 90%;
+	margin: 0 auto;
+	border-radius: 15px;
+}
+.icon--like{
+	position:absolute;
+	bottom:0;
+	left:0;
+	margin:10px;
+	width:30px;
+}
+.icon--trash{
+	position:absolute;
+	bottom:0;
+	right:0;
+	margin:10px;
+	width:30px;
+	padding-top: 8px;
+}
+.trashed{
+	-webkit-transform:translateY(-200px;);
+}
+/*********Positions des sections**********/
+#recette{display:none;}
+.favoris, .liste, .recherche{
+	position: absolute;
+	-webkit-transform:translateY(-100%);
+	-webkit-transition:all .3s ease-out;
+}
+.recherche{
+}
+#filtres{
+	-webkit-transform:translateX(100%);
+	-webkit-transition:all .3s ease-out;
+}
+.open-from-top{
+	-webkit-transform:translateY(0);
+}
+.open_from_right{
+	-webkit-transform:translateX(0);
+}
+/*********FAVORIS*********/
+/*********FAVORIS*********/
+/*********FAVORIS*********/
+.top-bar-favoris{
+	height: 50px;
+	background: #ace;
+}
+.icone-retour{
+	display: inline;
+}
+.top-bar-favoris h1{
+	float:left;
+	display: block;
+	font-size: 23px;
+	font-weight:300;
+	margin:11px 0 12px 0;
+}
+.top-bar-favoris a{
+	float:left;
+	display:block;
+	padding:10px 15px 10px 15px;
+	margin-right: 100px;
+}
+#favoris ul{
+	padding:0;
+	margin:0;
+}
+#favoris ul li{
+	float:left;
+	width:100%;
+	border-bottom: 1px solid #ace;
+	padding:12px 0 10px 5px ;
+	text-align: left;
+}
+#favoris ul li span{
+	text-align: left;
+	margin-left: 20px;
+}
+#favoris ul li div{
+	float:left;
+	display:none;
+	width:100%;
+}
+#favoris ul li div button{
+	float:left;
+	border:none;
+	width:33%;
+	height:;
+	background:none;
+}
+#favoris ul li div button{
+	border-right: 1px solid #ace;
+	padding:10px;
+}
