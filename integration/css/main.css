@@ -51,43 +51,45 @@
 	margin: 0 auto;
 	border-radius: 15px;
 }
-/*********FAVORIS*********/
-/*********FAVORIS*********/
-/*********FAVORIS*********/
-.top-bar-favoris{
+
+/**TOP-BAR**/
+
+.top-bar{
 	height: 50px;
-	background: #ace;
 }
-.icone-retour{
-	display: inline;
-}
-.top-bar-favoris h1{
+.top-bar h1{
 	float:left;
-	display: block;
 	font-size: 23px;
 	font-weight:300;
-	margin:11px 0 12px 0;
+	margin:13px 0 10px 0;
 }
-.top-bar-favoris a{
+.top-bar a:first-child{
 	float:left;
-	display:block;
-	padding:10px 15px 10px 15px;
-	margin-right: 100px;
+	padding:10px 25px 8px 15px;
+	margin: 1px 75px 0 0 ;
+}
+/*********FAVORIS*********/
+/*********FAVORIS*********/
+/*********FAVORIS*********/
+
+#top-bar-favoris{
+	background: #EA543F;
 }
 #favoris ul{
 	padding:0;
 	margin:0;
+	list-style: none;
 }
 #favoris ul li{
 	float:left;
 	width:100%;
 	border-bottom: 1px solid #ace;
-	padding:12px 0 10px 5px ;
 	text-align: left;
 }
 #favoris ul li span{
+	display: block;
 	text-align: left;
-	margin-left: 20px;
+	margin: 20px 0 15px 50px;
 }
 #favoris ul li div{
 	float:left;
@@ -95,15 +97,54 @@
 	width:100%;
 }
 #favoris ul li div button{
+	font-size: 12px;
 	float:left;
 	border:none;
-	width:33%;
-	height:;
 	background:none;
 }
 #favoris ul li div button{
 	border-right: 1px solid #ace;
 	padding:10px;
 }
+#favoris button:nth-child(1){
+	width:30%;
+}
+#favoris button:nth-child(2){
+	width:40%;
+}
+#favoris button:last-child{
+	width:30%;
+	border-right:none;
+}
 
+/******LISTE*********/
 
+#top-bar-liste{
+	background-color: #25a1e5;
+}
+.top-bar a:last-child{
+	float:right;
+	padding:10px 18px 8px 22px;
+	margin:;
+}
+#liste ul{
+}
+#liste ul li{
+	height:50px;
+	width: 100%;
+}
+
+#liste input[type=checkbox]{
+  display: none;
+}
+
+.option-input + label span {
+ 	display: inline-block;
+ 	width:17px;
+ 	height:25px;
+ 	background:url() no-repeat;
+ }
+
+#check-one span{
+	float:left;
+}

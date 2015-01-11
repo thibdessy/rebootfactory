@@ -76,13 +76,13 @@
                         </g>
                     </svg>
                 </li>
-            </ul>             
-        </nav>      
+            </ul>            
+        </nav>    
         <section class="screen" id="home">
 
             <h1 class="logo">logo</h1>
-
-            <div class="overview">
+            
+            <!-- <div class="overview">
                 <img src="img/sautedeveau-medium.jpg" alt="image d'un sauté de veau" class="image--overview">
                 <h2>Sauté de veau au chorizo</h2>
                 <p>Plat de viande complet rapide et pas chere et délicieusement épicé.</p>
@@ -113,7 +113,7 @@
                 <p>Plat de viande complet rapide et pas chere et délicieusement épicé.</p>
                 <bouton class="goto">voir la recette</bouton>
             </div>        
-             
+              -->
 
         </section>
 
@@ -143,9 +143,9 @@
             </div>      
         </section>
 
-<!-- FAVORIS FAVORIS FAVORIS FAVORIS FAVORIS FAVORIS FAVORIS FAVORIS FAVORIS FAVORIS FAVORIS FAVORIS FAVORIS FAVORIS FAVORIS FAVORIS FAVORIS FAVORIS FAVORIS FAVORIS FAVORIS FAVORIS FAVORIS-->
+<!-- FAVORIS FAVORIS FAVORIS FAVORIS FAVORIS FAVORIS FAVORIS FAVORIS FAVORIS FAVORIS FAVORIS-->
         <section class="screen" id="favoris">
-            <div class="top-bar-favoris">
+            <div class="top-bar" id="top-bar-favoris">
                 <a href="Icone retour page précédente" src="#">
                     <svg class="icone-retour" version="1.1" x="0px" y="0px"
                     width="11.985px" height="27px" viewBox="0 0 11.985 27" enable-background="new 0 0 11.985 27" xml:space="preserve">
@@ -164,9 +164,54 @@
                 <li><span>Ceci n'est pas une recette</span></li>
                 <li><span>Pommes d'apis</span></li>
             </ul>
+        </section> <!-- END FAVORIS -->
 
+ <!-- LISTE LISTE LISTE LISTE LISTE LISTE LISTE LISTE LISTE LISTE LISTE LISTE LISTE LISTE LISTE -->
         <section class="screen" id="liste">
-            <h1>Liste</h1>
+            
+            <div class="top-bar" id="top-bar-liste">
+                <a href="Icone retour page précédente" src="#" id="icone-retour">
+                    <svg class="icone-retour"  version="1.1" x="0px" y="0px"
+                    width="11.985px" height="27px" viewBox="0 0 11.985 27" enable-background="new 0 0 11.985 27" xml:space="preserve">
+                    <path d="M2.265,13.5l9.5-11.875c0.345-0.431,0.275-1.061-0.156-1.405c-0.43-0.344-1.061-0.275-1.405,0.156l-10,12.5c-0.019,0.024-0.024,0.053-0.041,0.079c-0.039,0.058-0.068,0.117-0.093,0.18c-0.024,0.059-0.043,0.116-0.055,0.177C0.003,13.374,0,13.435,0,13.5s0.003,0.125,0.016,0.189c0.012,0.061,0.031,0.118,0.055,0.177c0.025,0.063,0.054,0.123,0.093,0.18c0.017,0.025,0.021,0.055,0.041,0.079l10,12.5C10.401,26.871,10.692,27,10.985,27c0.219,0,0.44-0.072,0.624-0.219c0.432-0.345,0.501-0.974,0.156-1.405L2.265,13.5z"/>
+                    </svg>
+                 </a>
+                <h1>Liste</h1>
+                <a href="Icone recette présente dans la liste" class=>
+
+                     <svg version="1.1" x="0px" y="0px"width="38.789px" height="30px" viewBox="620.605 345.149 38.789 30" enable-background="new 620.605 345.149 38.789 30" xml:space="preserve">
+                        <g>
+                        <path fill="none" d="M636.629,349.157c-1.364-1.288-3.333-1.941-5.909-1.941c-2.5,0-4.394,0.931-5.757,2.067c-0.984,0.833-2.083,2.245-2.386,2.699v20.105c1.667-1.516,4.734-3.693,8.143-3.693c3.485,0,6.646,2.317,8.312,3.756v-20.167c-0.076-0.076-0.664-1-0.815-1.152C637.838,350.376,637.311,349.763,636.629,349.157z"/>
+                        <path fill="none" d="M655.037,349.283c-1.364-1.136-3.258-2.067-5.758-2.067c-2.574,0-4.545,0.654-5.908,1.941c-0.682,0.606-1.209,1.218-1.588,1.672c-0.151,0.152-0.739,1.077-0.814,1.152v20.167c1.666-1.439,4.827-3.756,8.311-3.756c3.408,0,6.476,2.178,8.143,3.693v-20.105C657.119,351.528,656.021,350.116,655.037,349.283z"/>
+                        <path d="M659.189,351.06c-0.075-0.075-0.441-1.288-2.107-2.803c-1.666-1.515-4.242-3.109-7.803-3.109c-3.56,0-6.211,1.547-7.954,3.062c-0.513,0.44-0.952,0.996-1.325,1.436c-0.372-0.44-0.812-0.996-1.326-1.436c-1.742-1.515-4.394-3.062-7.954-3.062s-6.136,1.594-7.802,3.109c-1.666,1.515-2.033,2.728-2.108,2.803l-0.205,0.757l0.11,22.649l2.203,0.682c0-0.076,0.758-1.363,2.121-2.5c1.364-1.212,3.257-2.272,5.757-2.272c2.575,0,4.545,1.137,5.908,2.424c0.682,0.606,1.212,1.212,1.591,1.667c0.151,0.227,0.303,0.454,0.378,0.529c0.076,0.076,0.076,0.152,0.076,0.152H640h1.251c0,0,0-0.077,0.074-0.152c0.077-0.075,0.229-0.304,0.379-0.53c0.379-0.454,0.909-1.06,1.592-1.667c1.363-1.286,3.332-2.423,5.908-2.423c2.499,0,4.394,1.06,5.756,2.272c1.364,1.137,2.122,2.423,2.122,2.5l2.202-0.683l0.11-22.648L659.189,351.06z M639.032,372.15c-1.666-1.438-4.827-3.756-8.312-3.756c-3.409,0-6.476,2.178-8.143,3.693v-20.105c0.304-0.454,1.402-1.866,2.386-2.699c1.363-1.136,3.257-2.067,5.757-2.067c2.575,0,4.545,0.654,5.909,1.941c0.682,0.606,1.208,1.218,1.587,1.672c0.152,0.152,0.74,1.077,0.815,1.152V372.15z M657.422,372.087c-1.667-1.516-4.734-3.693-8.143-3.693c-3.483,0-6.645,2.316-8.311,3.756v-20.167c0.075-0.076,0.663-1,0.814-1.152c0.379-0.454,0.906-1.066,1.588-1.672c1.363-1.288,3.334-1.941,5.908-1.941c2.5,0,4.394,0.931,5.758,2.067c0.984,0.833,2.082,2.245,2.385,2.699V372.087z"/>
+                        </g>
+                    </svg>
+                </a>
+            </div>        
+        <!-- MAIN LISTE  MAIN LISTE MAIN LISTE MAIN LISTE -->
+            <ul>
+                <li>
+                        <input type="checkbox" id="c1" name="cc" class="option-input checkbox" CHECKED />
+                        <label for="c1"><span>250gr</span><span>Porc</span></label>
+
+                </li>
+                <li>
+                    <span>Carottes</span>
+                </li>
+                <li>
+                    <span>Ravioli</span>
+                </li>
+                <li>
+                    <span>Etoiles de mer</span>
+                </li>
+                <li>
+                    <span>Haricot vert</span>
+                </li>
+                <li>
+                    <span>C'est mieu de rien mettre de long</span>
+                </li>
+            </ul>
+
         </section>
         <section class="screen" id="recherche">
             <h1>Recherche</h1>
