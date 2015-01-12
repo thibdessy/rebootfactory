@@ -58,6 +58,13 @@ $( document ).ready(function() {
     	$("#favoris, #liste, #recherche").removeClass("open-from-top");   	
     });
 
+    $( '#iconfiltre' ).click(function() {
+        $("#filtres").addClass("open-from-right");     
+    });
+    $( '#return' ).click(function() {
+        $("#filtres").removeClass("open-from-right");     
+    });
+
     $( '#iconlike' ).click(function() {
         $(this).parent().toggleClass("liked");
         if (!$(this).parent().is('.liked')) {     
