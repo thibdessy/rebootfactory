@@ -1,6 +1,8 @@
 *, *:before, *:after {
   box-sizing: border-box;
 }
+
+/*MENU MENU MENU MENU MENU*/
 .menu{
 	position: fixed;
 	height: 50px;
@@ -9,49 +11,97 @@
 	background:#feb448;
 	z-index:999;
 }
+
 .menu ul li{
 	float:left;
 	list-style: none;
 	width: calc(100% / 4);
 	text-align: center;
 }
+
 .menu ul{
 	height: 50px;
 	margin:0;
 	padding: 0;
 }
+
 .icon{
 	height:35px;
 	margin: 7px 0px;
 	fill:#4c413f;
 }
 
+/*HOME HOME HOME HOME HOME HOME HOME*/
+
 .screen{
-	background: #F9F9F9;
+	background: #f7f7f7;
 	width: 100%;
-	height:100%;
-	overflow: hidden;
-}
-.overview{
-	background:#fff;
-	border-radius: 15px;
-	box-shadow: 1px 1px 4px #999;
-	float: left;
-	width: 250px;
-	height:350px;
-	margin: 15px;
-	overflow: hidden;
-}
-.overview h2{
-	text-align: center;
+	height:430px;
+	
 }
 
-.recipe{
+.overview{
+	background:#fff;
+	border-radius: 8px;
+	box-shadow: 1px 1px 4px #999;
+	width: 250px;
+	height:350px;
+	margin: 0px auto;
+	overflow: hidden;
+	position:relative;
+}
+
+.goto{
+	border:none;
+	color:#fff;
+	background-color: #4aaed1;
+	border-radius:3px;
+	padding:19px 35px;
+	margin: 15px 36px 15px 40px;
+}
+
+.overview h2{
+	display:inline-block;
+	margin: 15px 44px 0 44px;
+	padding-bottom:10px;
+	border-bottom:2px solid #efefef;
+}
+
+/*.recipe{
 	width: 90%;
 	margin: 0 auto;
 	border-radius: 15px;
+}*/
+
+#header-logo{
+	float:left;
+	margin: 15px 95px 12px 35px ;
+}
+.filtre-logo{
+	float:left;
+	margin-top: 10px;
+	padding:5px;
+
+}
+.poubelleicon{
+	position:absolute;
+	padding:10px 46px 0 30px;
+	bottom:10px;
+	left:20px;
+	opacity: .5;
+
 }
 
+.coeuricon{
+	position: absolute;
+	border-left: 2px solid #efefef;
+	padding: 7px 26px 5px 45px;
+	margin:15px 0 0 0;
+	bottom:5px;
+	right:19px;
+	color:red;
+
+}
 /**TOP-BAR**/
 
 .top-bar{
@@ -68,6 +118,8 @@
 	padding:10px 25px 8px 15px;
 	margin: 1px 75px 0 0 ;
 }
+
+
 /*********FAVORIS*********/
 /*********FAVORIS*********/
 /*********FAVORIS*********/
@@ -80,6 +132,18 @@
 	margin:0;
 	list-style: none;
 }
+#favoris ul li:first-child{
+	border-left: 10px solid #03A9F4;
+}
+#favoris ul li:nth-child(2){
+	border-left: 10px solid #0288D1;
+}
+#favoris ul li:first-child{
+	border-left: 10px solid #03A9F4;
+}
+#favoris ul li:first-child{
+	border-left: 10px solid #03A9F4;
+}
 #favoris ul li{
 	float:left;
 	width:100%;
@@ -89,7 +153,8 @@
 #favoris ul li span{
 	display: block;
 	text-align: left;
-	margin: 20px 0 15px 50px;
+	margin: 20px 0 0 50px;
+	padding-bottom:25px;
 }
 #favoris ul li div{
 	float:left;
@@ -127,24 +192,75 @@
 	padding:10px 18px 8px 22px;
 	margin:;
 }
-#liste ul{
-}
+
 #liste ul li{
 	height:50px;
 	width: 100%;
-}
 
+}
 #liste input[type=checkbox]{
   display: none;
 }
 
-.option-input + label span {
- 	display: inline-block;
- 	width:17px;
- 	height:25px;
- 	background:url() no-repeat;
- }
+		/*-------------*/
 
-#check-one span{
-	float:left;
+#liste .food-list{
+	padding-left: 0;
+	margin: 0;
+}
+
+#liste .food-list li{
+	height: 54px;
+	line-height: 54px;
+	padding: 0px 20px;
+	/*border-bottom: 1px solid #4c413f;*/
+}
+
+#liste .food-list li .center-plate{
+	position: absolute;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+}
+
+#liste .food-list input[type="checkbox"] + label {
+	width: 100%;
+	display: inline-block;
+	border-bottom: 1px solid #4c413f;
+	position: relative;
+	padding: 0 5px 0 0;
+}
+
+#liste .food-list input[type="checkbox"] + label:after{
+	position: absolute;
+	content: '';
+	width: calc(100% - 30px);
+	height: 2px;
+	background: none;
+	left: 0;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+}
+
+#liste .food-list input[type="checkbox"] + label .check-sprite {
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	vertical-align: middle;
+	background: url(../img/check-sprite.svg) center top no-repeat;
+	cursor: pointer;
+	float: right;
+	margin-top: 17px;
+}
+
+#liste .food-list input[type="checkbox"]:checked + label .check-sprite {
+  background: url(../img/check-sprite.svg) center bottom no-repeat;
+}
+
+#liste .food-list input[type="checkbox"]:checked + label{
+	text-decoration: line-through;
+	color: rgba(0,0,0,.5);
+}
+
+#liste .food-list input[type="checkbox"]:checked + label:after{
+	background: #4c413f;
 }
