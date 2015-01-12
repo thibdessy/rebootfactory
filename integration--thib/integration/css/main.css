@@ -110,13 +110,34 @@ p{
 .screen h1{
 	text-align: center;
 }
-#recette{display:none;}
+.recette h2{text-align: center;}
+.recette{
+	background: #fff;
+	position: absolute;
+	z-index:99;
+	width: 320px;
+	margin: 0 auto;
+	-webkit-transform:scale(0,0);
+	-webkit-transition:all .3s ease-in;
+	padding-bottom:60px; 
+}
+.scale-recipe{
+	-webkit-transform:scale(1,1);
+}
+.recette h3 {
+	background: #feb448;
+	color:#4c413f;
+	padding: 5px;
+	width:100%;
+	font-size: 0.9;
+}
+.preparation, .ingredients{
+	padding: 10px;
+}
 .favoris, .liste, .recherche{
 	position: absolute;
 	-webkit-transform:translateY(-100%);
 	-webkit-transition:all .3s ease-out;
-}
-.recherche{
 }
 .filtres{
 	-webkit-transform:translateX(-100%);

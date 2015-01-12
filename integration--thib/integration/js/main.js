@@ -11,18 +11,13 @@ $( document ).ready(function() {
     var likeStroke = like.select('path');
     var trash = Snap.select('#icontrash');
     var trashStroke = trash.select('path:nth-child(2)');
-	$('#favoris li').each(function(){
-		$(this).append('<div><button>Préparation</button> <button>Ajouter à la liste</button> <button>Supprimer</button> </div>');
-	});
-	$('#favoris li').click(function(){
-		var recupselect= $(this).children();
-		$(recupselect).slideDown(300);
-	});
-
-	$('#favoris li').click(function(){
-		var recupselect= $(this).children();
-		$(recupselect).slidetoggle(300);
-	});
+    $('#favoris li').each(function(){
+        $(this).append('<div><button>Préparation</button> <button>Ajouter à la liste</button> <button>Supprimer</button> </div>');
+    });
+    $('#favoris li').click(function(){
+        var recupselect= $(this).children('div');
+        $(recupselect).slideToggle(300);
+    });
     $( '#iconcoeur' ).click(function() {
         $("#favoris").toggleClass("open-from-top");
         if ($("#favoris").is('.open-from-top')) {     
@@ -61,8 +56,14 @@ $( document ).ready(function() {
     $( '#iconfiltre' ).click(function() {
         $("#filtres").addClass("open-from-right");     
     });
+    $( '#goto, #overview' ).click(function() {
+        $("#recette").addClass("scale-recipe");     
+    });
     $( '#return' ).click(function() {
         $("#filtres").removeClass("open-from-right");     
+    });
+    $( '#return-recette' ).click(function() {
+        $("#recette").removeClass("scale-recipe");     
     });
 
     $( '#iconlike' ).click(function() {
